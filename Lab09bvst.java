@@ -77,6 +77,7 @@ class Rational
 	 public String getOriginal()
 	 {
  	 (getfirstNum() + "/" + getfirstDen() + " equals " = ());
+	 
 	 }
 	 public int getReduced(){ return reduced; }
 
