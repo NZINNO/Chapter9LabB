@@ -75,7 +75,7 @@ class Rational
 
 	 //Methods
 	 public String getOriginal(){
- 	 String Original = " " firstNum; + "/" firstDen;
+ 	 String Original = " " + firstNum + "/" + firstDen;
 	 return Original;
 
 	 }
