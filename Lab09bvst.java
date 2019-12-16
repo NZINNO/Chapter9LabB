@@ -56,7 +56,12 @@ class Rational
 	private int reducedDen;		// reduced denominator
    private int gcf;           // greatest common factor
 	 //Constructor
-	 public Rational()
+	 public Rational(){
+		 num1 = 2;
+		 den1 = 5;
+		 num2 = 5;
+		 den2 = 7;
+	 }
 
 	private void getGCF(int n1,int n2)
 	{
