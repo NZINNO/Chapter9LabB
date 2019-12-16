@@ -49,13 +49,15 @@ public class Lab09bvst
 
 class Rational
 {
+	//Attributes
 	private int firstNum;	   // entered numerator
 	private int firstDen;	   // entered denominator
 	private int reducedNum;		// reduced numerator
 	private int reducedDen;		// reduced denominator
    private int gcf;           // greatest common factor
+	 //Constructor
+	 public Rational()
 
-	
 	private void getGCF(int n1,int n2)
 	{
 		int rem = 0;
@@ -75,5 +77,3 @@ class Rational
 
 
 }
-
-
