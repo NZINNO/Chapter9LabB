@@ -57,14 +57,12 @@ class Rational
   private int gcf;           // greatest common factor
 	 //Constructor
 	 public Rational(){
-		 num1 = 2;
-		 den1 = 5;
-		 num2 = 5;
-		 den2 = 7;
+		 firstNum = 5;
+		 firstDen = 7;
 	 }
 	 public Rational(int firstNum, int firstDen){
-		 this.firstNum = num1;
-		 this.firstDen = den1;
+		 this.firstNum = firstNum;
+		 this.firstDen = firstDen;
 		 reduce();
 	 }
 	 public int reduce(){
@@ -79,16 +77,18 @@ class Rational
 	 return Original;
 
 	 }
-	 public int getReduced(){ return reduced; }
-
+	 public String getReduced(){
+	 String reduced = " " + firstNum + "/" + firstDen;
+	 return reduced;
+ 	}
 	 public void multiply(Rational r1, Rational r2){
-		 this.firstNum = r1.firstNum * r2.firstDen;
-		 this.firstDen = r1.firstDen * r2.firstNum;
+		 this.firstNum = firstNum * firstDen;
+		 this.firstDen = firstDen * firstNum;
 		 reduce();
 	 }
 	 public void divide(){
-		 this.firstNum = r1.firstNum * r2.firstDen;
-		 this.firstDen = r1.firstDen * r2.firstNum;
+		 this.firstNum = firstNum * firstDen;
+		 this.firstDen = firstDen * firstNum;
 		 reduce();
 	 }
 	private void getGCF(int n1,int n2)
