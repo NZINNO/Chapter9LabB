@@ -74,18 +74,22 @@ class Rational
 	 }
 
 	 //Methods
-	 public String getOriginal()
-	 {
- 	 (getfirstNum() + "/" + getfirstDen() + " equals " = ());
-	 
+	 public String getOriginal(){
+ 	 String Original = " " firstNum; + "/" firstDen;
+	 return Original;
+
 	 }
 	 public int getReduced(){ return reduced; }
 
-	 public void multiply(){
-
+	 public void multiply(Rational r1, Rational r2){
+		 this.firstNum = r1.firstNum * r2.firstDen;
+		 this.firstDen = r1.firstDen * r2.firstNum;
+		 reduce();
 	 }
 	 public void divide(){
-
+		 this.firstNum = r1.firstNum * r2.firstDen;
+		 this.firstDen = r1.firstDen * r2.firstNum;
+		 reduce();
 	 }
 	private void getGCF(int n1,int n2)
 	{
